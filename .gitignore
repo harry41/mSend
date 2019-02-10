@@ -1,0 +1,23 @@
+# Add any directories, files, or patterns you don't want to be tracked by version control -Harry
+# Compiled files
+*.tfstate
+*.tfstate.backup
+*.retry
+*.swap
+*.bak
+*.tmp
+*.zip*
+# This is vars commented temporarily purpose
+*.tfvars
+
+# Module directory
+**/acme/**
+.cache/
+.ssh/
+bin/*
+tmp/*
+*temp*.sh
+.DS_Store
+*/.DS_Store
+
+
