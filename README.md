@@ -1,45 +1,48 @@
 # mSend
+ **Version : v0.0.3** <br>
 mSend is tiny utility to send unlimited email.
 
-### How To Install mSend ?
 
+### Getting Start
+
+##### Step - 1 Installation
 ```
-wget https://raw.githubusercontent.com/harry41/mSend/master/msend && chmod +x msend
+sudo curl -L "https://github.com/harry41/mSend/raw/v0.0.3/msend" -o /usr/bin/msend
+sudo chmod +x /usr/bin/msend
+msend -h
 ```
-
-#### Lets Explore about More features
-
-###### To view Help
-   ```bash
-   ./msend -h
-   ```
-###### To Send Email
-   ```bash
-   ./msend -t "youremail@domain.com" -s "Your Subject Here" -f "Email/Template/path.txt"
-   ```
-### How To Generate SMTP AUTH TOKEN ?
+##### Step - 2 : Generate SMTP Auth Token
  **mSend** uses your gmail smtp login credentials to sent email. so you need to generate your smtp auth token by executing below command.
-   ```bash
-   ./msend --get-smtp-auth
-   ```
-   Output :
-   ```bash
-     Please Enter Valid Credentials  
-     Enter Your Gmail ID : your_email@gmail.com
-     Enter Your Gmail PASSWORD : secret@password
-     Enter Email Sender Name : Harry
 
-     Your SMTP AUTH TOKEN has been Saved in  ~/.mSend/msend.conf
-   ```
+ ```bash
+ ./msend --get-smtp-auth
+ ```
+ Output :
+ ```bash
+   Please Enter Valid Credentials  
+   Enter Your Gmail ID : your_email@gmail.com
+   Enter Your Gmail PASSWORD : secret@password
+   Enter Email Sender Name : Harry
 
-  ###### Troubleshooting  
+   Your SMTP AUTH TOKEN has been Saved in  ~/.mSend/msend.conf
+ ```
 
-  if you configured your smtp credentials and stil you are unable to send email.
+##### Step - 3 : Enable Less Secure Application
 
-  1. Go to your [Google Account](https://myaccount.google.com/)
-  2. On the left navigation panel, click Security.
-  3. On the bottom of the page, in the Less secure app access panel, click Turn on access.
+1. Go to your [Google Account](https://myaccount.google.com/)
+2. On the left navigation panel, click Security.
+3. On the bottom of the page, in the Less secure app access panel, click Turn on access.
 
+##### Step - 4 : Send test email.
+You can create your own html templates. send your email by executing below commmand. Here we have created a html email template for you `~/.mSend/email_template.html`
+
+```bash
+msend -t 'your_email@domain.com' -s 'mSend Has been Installed' -f '~/.mSend/email_template.html'
+```
+
+---
+### Troubleshooting  
+---
 
 ### How To Configure SMTP credentials in mSend ?
 
