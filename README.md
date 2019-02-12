@@ -1,5 +1,6 @@
 # mSend
- **Version : v0.0.8** <br>
+ **Version**        : v0.0.9 <br>
+ **Release Date**   : 12-Feb-19 <br>
 mSend is tiny utility to send unlimited email.
 
 
@@ -7,7 +8,7 @@ mSend is tiny utility to send unlimited email.
 
 ##### Step - 1 Installation
 ```
-sudo curl -L "https://github.com/harry41/mSend/raw/v0.0.8/msend" -o /usr/bin/msend
+sudo curl -L "https://github.com/harry41/mSend/raw/v0.0.9/msend" -o /usr/bin/msend
 sudo chmod +x /usr/bin/msend
 msend -h
 ```
@@ -37,7 +38,7 @@ msend -h
 You can create your own html templates. send your email by executing below commmand. Here we have created a html email template for you `~/.mSend/email_template.html`
 
 ```bash
-msend -t 'your_email@domain.com' -s 'mSend Has been Installed' -f '~/.mSend/email_template.html'
+msend -t "your_email@domain.com" -s "mSend Has been Installed" -f "~/.mSend/email_template.html" -a "/var/log/nginx/error.log"
 ```
 
 ---
