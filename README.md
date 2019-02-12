@@ -1,5 +1,5 @@
 # mSend
- **Version**        : v0.0.9 <br>
+ **Version**        : v0.1.0 <br>
  **Release Date**   : 12-Feb-19 <br>
 mSend is tiny utility to send unlimited email.
 
@@ -8,7 +8,7 @@ mSend is tiny utility to send unlimited email.
 
 ##### Step - 1 Installation
 ```
-sudo curl -L "https://github.com/harry41/mSend/raw/v0.0.9/msend" -o /usr/bin/msend
+sudo curl -L "https://github.com/harry41/mSend/raw/v0.1.0/msend" -o /usr/bin/msend
 sudo chmod +x /usr/bin/msend
 msend -h
 ```
