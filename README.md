@@ -1,5 +1,5 @@
 # mSend
- **Version**        : v0.1.7 <br>
+ **Version**        : v0.1.8 <br>
  **Release Date**   : 23-Feb-19 <br>
 mSend is tiny utility to send unlimited email.
 
@@ -8,10 +8,13 @@ mSend is tiny utility to send unlimited email.
 
 ##### Step - 1 Installation
 ```
-sudo curl -L "https://github.com/harry41/mSend/raw/v0.1.7/msend" -o /usr/bin/msend
+sudo curl -L "https://github.com/harry41/mSend/raw/v0.1.8/msend" -o /usr/bin/msend
 sudo chmod +x /usr/bin/msend
 msend -h
 ```
+
+![Alt text](https://4.bp.blogspot.com/-bdJz06lnaD0/XHE8TvBt4nI/AAAAAAAAAaM/uxA5-SjN4bkSbxU27voShq67BxdGm2vmQCLcBGAs/s1600/msend_help.png)
+
 ##### Step - 2 : Generate SMTP Auth Token
  **mSend** uses your gmail smtp login credentials to sent email. so you need to generate your smtp auth token by executing below command.
 
@@ -65,7 +68,25 @@ Here is sample msend.conf
 2. `REPLY_EMAIL_ADDRESS` is very important recipient will reply on this email id.
 
 
+
+### How To update mSend ?
+ No Need to worry about updatation. it will update automatically every 30 days. also you can update anytime if it is required.
+
+  **Run below command to Update**
+  ```bash
+  msend --update
+  ```
+
 #### About us
-* Utility Name : mSend
-* Developed by : Harry
-* Email : HarryTheDevOpsGuy@gmail.com
+* **Utility Name** : [mSend](https://github.com/harry41/mSend)
+* **Developed by** : [Harry](http://harry-thedevopsguy.blogspot.com/)
+* **Email** : HarryTheDevOpsGuy@gmail.com
+* **Sponsored by** : [eSpoir Soft pvt Ltd](http://espoirsoft.com)
+
+#### Contributors
+  - Shankar
+  - Kapil
+  - Chandan Bisht
+  - Satya
+
+**Thank you** So much for your contribution.
