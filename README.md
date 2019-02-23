@@ -1,5 +1,5 @@
 # mSend
- **Version**        : v0.1.8 <br>
+ **Version**        : v0.1.9 <br>
  **Release Date**   : 23-Feb-19 <br>
 mSend is tiny utility to send unlimited email.
 
@@ -8,12 +8,12 @@ mSend is tiny utility to send unlimited email.
 
 ##### Step - 1 Installation
 ```
-sudo curl -L "https://github.com/harry41/mSend/raw/v0.1.8/msend" -o /usr/bin/msend
+sudo curl -L "https://github.com/harry41/mSend/raw/v0.1.9/msend" -o /usr/bin/msend
 sudo chmod +x /usr/bin/msend
 msend -h
 ```
 
-![Alt text](https://4.bp.blogspot.com/-bdJz06lnaD0/XHE8TvBt4nI/AAAAAAAAAaM/uxA5-SjN4bkSbxU27voShq67BxdGm2vmQCLcBGAs/s1600/msend_help.png)
+![Alt text](https://2.bp.blogspot.com/-lxEU7HEk0PA/XHE_dAaGTiI/AAAAAAAAAaY/ZXtQrhu_Ksw4WGLbOzS1feORpRz6NiCMACLcBGAs/s1600/msend_help.png)
 
 ##### Step - 2 : Generate SMTP Auth Token
  **mSend** uses your gmail smtp login credentials to sent email. so you need to generate your smtp auth token by executing below command.
