@@ -28,7 +28,7 @@ fi
 # User configs :
 EMAIL_TO="HarryTheDevOpsGuy@gmail.com"  # replace HarryTheDevOpsGuy@gmail.com with your email id.
 if [[ ! -z ${EMAIL_TO} && ${#EMAIL_SENDER_LIST[@]} -gt '0' ]]; then
-  msend -t "${EMAIL_TO}" -s "${HOSTNAME}|$(date +%F)| System Health Report" -f /tmp/health_reports/report_$(date +"%d_%b_%y")_${HOSTNAME}.html -a /your/log/file.zip
+  msend -t "${EMAIL_TO}" -s "${HOSTNAME}|$(date +%F)| System Health Report" -f /tmp/health_reports/REPORT_$(date +"%d_%b_%y")_${HOSTNAME}.html -a /var/log/auth.log
 fi
 
 # How To configure this script
