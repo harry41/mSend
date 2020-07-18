@@ -37,7 +37,7 @@
 ################################################################################
 ################################################################################
 ################################################################################
-export SLACK_CLI_TOKEN='xoxb-xxxxxxxxxxxxxxxxx-xxxxxxxxxxxxxxxxx-xxxxxxxxxxxx'
+export SLACK_CLI_TOKEN='xoxb-952829317635-957947141699-LoFTDCL8nOTMeEBqEe1FgUvj'
 export SLACK_CHANNEL="#devops"
 #export ADMIN_EMAIL="youremail@domain.com"
 #Replace above variable Value according to your token and slack_channel name.
