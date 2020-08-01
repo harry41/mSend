@@ -26,8 +26,8 @@ fi
 
 # Step - 2 :  Send Your Generated html reports to your email
 # User configs :
-EMAIL_TO="HarryTheDevOpsGuy@gmail.com ${EMAIL_SENDER_LIST[0]}"  # replace HarryTheDevOpsGuy@gmail.com with your email id.
-if [[ ${#EMAIL_TO[@]} -gt '0' && ${#EMAIL_SENDER_LIST[@]} -gt '0' ]]; then
+EMAIL_TO="HarryTheDevOpsGuy@gmail.com"  # replace HarryTheDevOpsGuy@gmail.com with your email id.
+if [[ ${#EMAIL_TO[@]} -gt '0' ]]; then
   msend -t "$(echo ${EMAIL_TO[@]})" -s "${HOSTNAME}|$(date +%F)| System Health Report" -f /tmp/health_reports/REPORT_$(date +"%d_%b_%y")_${HOSTNAME}.html -a /var/log/auth.log
 fi
 
