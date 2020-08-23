@@ -38,3 +38,18 @@ mlog [OPTION] src s3
 
 mlog /var/log/nginx/access.log-$(date --date='1 days ago' +'%Y-%m-%d').gz  s3://mylog-bucket/logs
 ```
+
+
+#### example 2
+if we want to push last 10 days logs in s3 bucket. We can use **mlog** within for loop.
+
+* `export LOGDAY=$i` Don't forget to use this variable.
+
+```bash
+#mlog [OPTIONS] "source/file/pattern*.gz" "/other/source/logs/application-*.log" "s3://target-bucket/folder"
+
+for (( i = 1; i < 10; i++ )); do
+  export LOGDAY=$i
+  mlog /var/log/tomcat-app*/app*.log.$(date --date="$i days ago" +'%Y-%m-%d')*  s3://mylog-bucket/logs
+done
+```
