@@ -15,7 +15,7 @@ if you want get notification on your email you must need to install mSlack. if y
 
 ##### Step 1: Install mCert.
 ```bash
-sudo curl -sL "https://github.com/harry41/mSend/raw/master/tools/mCert" -o /usr/bin/mcert
+sudo curl -sL "https://github.com/harry41/mSend/raw/master/tools/mcert" -o /usr/bin/mcert
 sudo chmod +x /usr/bin/mcert
 
 # Verify installation
