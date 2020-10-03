@@ -1,3 +1,7 @@
+# mLog Version
+ **Version**        : {RELEASE_VER} <br>
+ **Release Date**   : {RELEASE_DATE} <br>
+
 #### What is mlog ?
 mlog is small script to manage your application logs like nginx, apache, tomcat, laravel, or any other application. it will help you to take backup of your logs file on periodically and will upload in target s3 bucket. it is fully safe and automated. you can use this tool with fully trust and without any data loss.
 

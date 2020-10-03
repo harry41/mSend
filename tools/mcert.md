@@ -1,3 +1,8 @@
+# mCert Version
+ **Version**        : {RELEASE_VER} <br>
+ **Release Date**   : {RELEASE_DATE} <br>
+
+
 #### What is mCert ?
 mCert is small script to notify before ssl expiration. it will help you to renew your ssl before getting expired.
 

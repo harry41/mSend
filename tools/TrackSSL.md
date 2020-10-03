@@ -1,3 +1,6 @@
+# TrackSSL Version
+ **Version**        : {RELEASE_VER} <br>
+ **Release Date**   : {RELEASE_DATE} <br>
 
 # Welcome to TrackSSL!
 
